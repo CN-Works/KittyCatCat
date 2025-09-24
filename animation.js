@@ -1,21 +1,21 @@
 // Wait for dom to be loaded
 document.addEventListener("DOMContentLoaded", function() {
-    let memeSound = new Howl({src: ["./src/ah.mp3"]});
+    let catElement = document.getElementById("cat")
 
     function changeCatStatus(status) {
         if (status === "normal") {
-            document.getElementById("cat").src = "./src/kitty_normal.png"
+            catElement.src = "./src/kitty_normal.png"
+            doc
         } else if (status === "loud") {
-            document.getElementById("cat").src = "./src/kitty_loud.png"
+            catElement.src = "./src/kitty_loud.png"
         }
     }
-
-    let catElement = document.getElementById("cat")
 
     catElement.addEventListener("pointerenter", (event) => {
         changeCatStatus("loud")
 
-        memeSound.volume(1.0)
+        let memeSound = document.getElementById("memeAudio")
+
         memeSound.play()
 
         setTimeout(function() {
