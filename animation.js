@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
     function changeCatStatus(status) {
         if (status === "normal") {
             catElement.src = "./src/kitty_normal.png"
-            doc
         } else if (status === "loud") {
             catElement.src = "./src/kitty_loud.png"
         }
