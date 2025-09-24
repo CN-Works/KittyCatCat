@@ -1,0 +1,17 @@
+body {
+    background-color: bisque;
+
+    height: 100svh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cat {
+    width: 25%;
+    min-width: 300px;
+    max-width: 90%;
+
+    user-select: none;
+}
